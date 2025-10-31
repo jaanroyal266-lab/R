@@ -1,9 +1,9 @@
 {
-    "name": "YukkiMusic",
+    "name": "ShivMusic",
     "description": "A Telegram bot that streams music into group voice chats with seamless playback and control.",
     "keywords": ["telegram", "bot", "music", "go", "voice-chat"],
-    "repository": "https://github.com/TheTeamVivek/YukkiMusic",
-    "website": "https://github.com/TheTeamVivek/YukkiMusic",
+    "repository": "https://github.com/teamsuraj2/S",
+    "website": "https://github.com/teamsuraj2/S",
     "stack": "container",
     "env": {
         "API_ID": {
@@ -68,12 +68,12 @@
         },
         "SUPPORT_CHAT": {
             "description": "The URL of your support chat.",
-            "value": "https://t.me/TheTeamVk",
+            "value": "https://t.me/dns_support_group",
             "required": false
         },
         "SUPPORT_CHANNEL": {
             "description": "The URL of your support channel.",
-            "value": "https://t.me/TheTeamVivek",
+            "value": "https://t.me/Team_Dns_Network",
             "required": false
         },
         "COOKIES_LINK": {
