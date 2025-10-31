@@ -48,10 +48,10 @@ var (
 	OwnerID        = getInt64("OWNER_ID")
 	LoggerID       = getInt64("LOGGER_ID")
 	DurationLimit  = int(getInt64("DURATION_LIMIT", 4200)) // in seconds
-	QueueLimit     = int(getInt64("QUEUE_LIMIT", 7))
+	QueueLimit     = int(getInt64("QUEUE_LIMIT", 20))
 	StartImage     = getString("START_IMG_URL", "https://raw.githubusercontent.com/Vivekkumar-IN/assets/master/images.png")
-	SupportChat    = getString("SUPPORT_CHAT", "https://t.me/TheTeamVk")
-	SupportChannel = getString("SUPPORT_CHANNEL", "https://t.me/TheTeamVivek")
+	SupportChat    = getString("SUPPORT_CHAT", "https://t.me/dns_support_group")
+	SupportChannel = getString("SUPPORT_CHANNEL", "https://t.me/Team_Dns_Network")
 	StartTime      = time.Now()
 	CookiesLink    = getString("COOKIES_LINK")
 	SetCmds        = getBool("SET_CMDS", false)
