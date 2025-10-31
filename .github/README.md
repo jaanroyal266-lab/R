@@ -1,4 +1,4 @@
-<h1 align="center">🎧 <b>YukkiMusic</b></h1>
+<h1 align="center">🎧 <b>ShivMusic</b></h1>
 
 <p align="center">
   <i>⚡ A blazing-fast, reliable, and feature-packed Telegram bot for streaming music in group voice chats — built with Go.</i>
@@ -12,7 +12,7 @@
   <a href="https://github.com/TheTeamVivek/YukkiMusic/stargazers">
     <img src="https://img.shields.io/github/stars/TheTeamVivek/YukkiMusic?color=FFD700&style=for-the-badge&logo=github&logoColor=black" alt="GitHub Stars">
   </a>
-  <a href="https://github.com/TheTeamVivek/YukkiMusic/fork">
+  <a href="https://github.com/teamsuraj2/S/fork">
     <img src="https://img.shields.io/github/forks/TheTeamVivek/YukkiMusic?color=00C853&style=for-the-badge&logo=github&logoColor=black" alt="GitHub Forks">
   </a>
 </p>
@@ -51,8 +51,8 @@
 1. **Clone the Repository:**
 
 ```
-git clone https://github.com/TheTeamVivek/YukkiMusic.git
-cd YukkiMusic
+git clone https://github.com/teamsuraj2/S.git
+cd S
 ```
 
 2. **Install FFmpeg:**
@@ -83,7 +83,7 @@ go build -o app ./cmd/app
 
 ### ☁️ Heroku Deployment
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TheTeamVivek/YukkiMusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/teamsuraj2/S)
 
 1. Click the **“Deploy to Heroku”** button above.  
 2. Fill in all required **environment variables**.  
@@ -107,22 +107,7 @@ All settings are managed using a `.env` file or environment variables.
 
 ---
 
-### ⚙️ Optional Variables
-
-| Variable | Description | Default |
-|:----------|:-------------|:----------|
-| `FALLEN_API_KEY` | API key for the [Fallen API](https://tgmusic.fallenapi.fun/) (YouTube downloader). You can get one from [@FallenApiBot](https://t.me/FallenApiBot). If you are using cookies, you can leave this empty. | *(empty)* |
-| `FALLEN_API_URL` | Base URL for the [Fallen API](https://tgmusic.fallenapi.fun/). For most users, the default should work fine. | `https://tgmusic.fallenapi.fun` |
-| `OWNER_ID` | User ID of the bot owner. |  |
-| `LOGGER_ID` | Chat ID for logging errors and events. | *(empty)* |
-| `DURATION_LIMIT` | Maximum track duration in seconds. | `4200` (70 minutes) |
-| `QUEUE_LIMIT` | Maximum queue size per chat. | `7` |
-| `START_IMG_URL` | Start image URL for `/start` message. | [Default Image](https://raw.githubusercontent.com/Vivekkumar-IN/assets/master/images.png) |
-| `SUPPORT_CHAT` | Support group link. | [@TheTeamVk](https://t.me/TheTeamVk) |
-| `SUPPORT_CHANNEL` | Update channel link. | [@TheTeamVivek](https://t.me/TheTeamVivek) |
-| `COOKIES_LINK` | The [batbin.me](https://batbin.me) link where you pasted your `yt-dlp` cookies file. If you are using the Fallen API, you can leave this empty. You can also skip this if you manually place your cookies `.txt` file in `internal/cookies/`. | *(empty)* |
-| `SET_CMDS` | Set [bot commands](https://raw.githubusercontent.com/Vivekkumar-IN/assets/refs/heads/master/bot_commands.png) automatically on startup. | `false` |
-| `MAX_AUTH_USERS` | Max number of authorized users per chat. | `25` |
+### ⚙️ Optional Variables| `MAX_AUTH_USERS` | Max number of authorized users per chat. | `25` |
 
 ---
 ## 💬 Commands
@@ -174,33 +159,9 @@ COOKIES_LINK=https://batbin.me/abcd1234
 
 ---
 
-### ⚡ 3. Using [Fallen API](https://tgmusic.fallenapi.fun/)
-
-The simplest and most reliable method for most users.  
-The **Fallen API** handles YouTube extraction and downloading on the server side — no cookies required.
-
-- Get your API key from [@FallenApiBot](https://t.me/FallenApiBot).  
-- In your `.env` file:  
-```
-FALLEN_API_KEY=your_api_key_here  
-FALLEN_API_URL=https://tgmusic.fallenapi.fun
-```
-
-- If you don’t have a key, you can leave it empty.
-
-> 💡 Recommended for users who don’t want to manage cookies manually.
-
----
-
-### 🧩 4. Custom API or Advanced Integration
-
-If you have your own API endpoint or downloader implementation,  
-contact us at [@TheTeamVk](https://t.me/TheTeamVk) —  
-we’ll provide ready-to-use **code templates** that you can integrate directly for your setup.
-
 ---
 > ✅ **Summary:**  
-> - Use **Fallen API** for the easiest setup (**paid**).  
+> - Use ** API** for the easiest setup (**paid**).  
 > - Use **cookies** if you don’t want to pay for an API.  
 > - Or contact us for a **custom solution** if you want to use your own API.
 ---
