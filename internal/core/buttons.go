@@ -31,7 +31,7 @@ import (
 func AddMeMarkup(username string) tg.ReplyMarkup {
 	return tg.NewKeyboard().
 		AddRow(
-			tg.Button.URL("⚡ Add Me to Your startgroup",
+			tg.Button.URL("♕︎ 𝐀ᴅᴅ 𝐌ᴇ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ ♕︎",
 				"https://t.me/"+username+"?startgroup=true",
 			),
 		).
@@ -75,7 +75,7 @@ func GetPlayMarkup(r *RoomState, queued bool) tg.ReplyMarkup {
 func GetGroupHelpKeyboard() *tg.ReplyInlineMarkup {
 	return tg.NewKeyboard().
 		AddRow(
-			tg.Button.URL("📒 Commands", "https://t.me/"+BUser.Username+"?start=help"),
+			tg.Button.URL("📒 𝐂ᴏᴍᴍᴀɴᴅs", "https://t.me/"+BUser.Username+"?start=help"),
 		).
 		Build()
 }
@@ -83,17 +83,17 @@ func GetGroupHelpKeyboard() *tg.ReplyInlineMarkup {
 func GetStartMarkup() tg.ReplyMarkup {
 	return tg.NewKeyboard().
 		AddRow(
-			tg.Button.URL("⚡ Add Me to Your startgroup",
+			tg.Button.URL("♕︎ 𝐀ᴅᴅ 𝐌ᴇ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ ♕︎",
 				"https://t.me/"+BUser.Username+"?startgroup=true",
 			),
 		).
 		AddRow(
-			tg.Button.Data("❓ Help & Commands", "help_cb"),
+			tg.Button.Data("𝐇ᴇʟᴘ & 𝐂ᴏᴍᴍᴀɴᴅs", "help_cb"),
 		//	tg.Button.URL("💻 Source", config.RepoURL),
 		).
 		AddRow(
-			tg.Button.URL("📢 Updates", config.SupportChannel),
-			tg.Button.URL("💬 Support", config.SupportChat),
+			tg.Button.URL("𝐔ᴘᴅᴀᴛᴇ 💬", config.SupportChannel),
+			tg.Button.URL("𝐒ᴜᴘᴘᴏʀᴛ 🚀", config.SupportChat),
 		).
 		Build()
 }
@@ -101,20 +101,20 @@ func GetStartMarkup() tg.ReplyMarkup {
 func GetHelpKeyboard() *tg.ReplyInlineMarkup {
 	return tg.NewKeyboard().
 		AddRow(
-			tg.Button.Data("🛠 Admins", "help:admins"),
-			tg.Button.Data("🌍 Public", "help:public"),
+			tg.Button.Data("🛠 𝐀ᴅᴍɪɴs", "help:admins"),
+			tg.Button.Data("🌍 𝐏ᴜʙʟɪᴄ", "help:public"),
 		).
 		AddRow(
-			tg.Button.Data("👑 Owner", "help:owner"),
-			tg.Button.Data("⚡ Sudoers", "help:sudoers"),
+			tg.Button.Data("👑 𝐎ᴡɴᴇʀ", "help:owner"),
+			tg.Button.Data("⚡ 𝐒ᴜᴅᴏᴇʀs", "help:sudoers"),
 		).
-		AddRow(tg.Button.Data("⬅️ Back", "start")).
+		AddRow(tg.Button.Data("⬅️ 𝐁ᴀᴄᴋ", "start")).
 		Build()
 }
 
 func GetBackKeyboard() *tg.ReplyInlineMarkup {
 	return tg.NewKeyboard().
-		AddRow(tg.Button.Data("⬅️ Back", "help:main")).
+		AddRow(tg.Button.Data("⬅️ 𝐁ᴀᴄᴋ", "help:main")).
 		Build()
 }
 
