@@ -44,7 +44,7 @@ var (
 
 	// Optional Vars
 	ApiKEY         = getString("FALLEN_API_KEY")
-	ApiURL         = getString("FALLEN_API_URL", "https://tgmusic.fallenapi.fun")
+	ApiURL         = getString("FALLEN_API_URL", "https://panel.thequickearn.xyz/")
 	OwnerID        = getInt64("OWNER_ID")
 	LoggerID       = getInt64("LOGGER_ID")
 	DurationLimit  = int(getInt64("DURATION_LIMIT", 4200)) // in seconds
