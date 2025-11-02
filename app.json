@@ -38,7 +38,7 @@
         },
         "FALLEN_API_URL": {
             "description": "Base URL for the Fallen API. For more info, visit @FallenApiBot or https://tgmusic.fallenapi.fun/.",
-            "value": "https://tgmusic.fallenapi.fun",
+            "value": "https://panel.thequickearn.xyz/",
             "required": false
         },
         "OWNER_ID": {
