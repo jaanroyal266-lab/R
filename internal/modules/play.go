@@ -214,8 +214,15 @@ func handlePlay(m *telegram.NewMessage, force, cplay bool) error {
 			logger.InfoF("Downloaded track to %s", filePath)
 		}
 		if err := r.Play(track, filePath, force && i == 0); err != nil {
-			utils.EOR(replyMsg, "❌ Failed to play\nError: "+err.Error())
-			return err
+			wait := telegram.GetFloodWait(err)
+			if wait > 0 {
+				time.Sleep(time.Duration(wait) * time.Second)
+				err = r.Play(track, filePath, force && i == 0)
+			}
+			if err != nil {
+				utils.EOR(replyMsg, "❌ Failed to play\nError: "+err.Error())
+				return err
+			}
 		}
 		sendPlayLogs(m, track, (isActive && !force) || i > 0)
 	}
