@@ -47,7 +47,7 @@ var (
 	ApiURL         = getString("FALLEN_API_URL", "https://tgmusic.fallenapi.fun")
 	OwnerID        = getInt64("OWNER_ID")
 	LoggerID       = getInt64("LOGGER_ID")
-	DurationLimit  = int(getInt64("DURATION_LIMIT", 4200)) // in seconds
+	DurationLimit  = int(getInt64("DURATION_LIMIT", 15000)) // in seconds
 	QueueLimit     = int(getInt64("QUEUE_LIMIT", 20))
 	StartImage     = getString("START_IMG_URL", "https://raw.githubusercontent.com/Vivekkumar-IN/assets/master/images.png")
 	SupportChat    = getString("SUPPORT_CHAT", "https://t.me/dns_support_group")
