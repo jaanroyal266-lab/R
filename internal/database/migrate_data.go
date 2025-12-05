@@ -29,7 +29,7 @@ import (
 )
 
 const (
-	oldDBName = "Yukki"
+	oldDBName = "TGN"
 )
 
 // old data structures
